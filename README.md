@@ -1,13 +1,27 @@
 # nuget-scripts
-Python scripts for working with nuget packages
+Python scripts for working with nuget packages.
+## add_powershell.py
+Add a powershell script to a nuget package or update an existing script.
+Usage:
+```
+python add_powershell.py <nuget_package> <script_target> <payload>
+```
+```nuget_package```: nuget package
+
+```script_target```: filename of the script to be added/modified (Init.ps1, Install.ps1, Uninstall.ps1)
+
+```payload```: payload that will be executed
+
+Example:
+```python add_powershell.py log4net.2.0.5.nupkg Init.ps1 payload/check_access_level.ps1```
 ## get_top_100_nuget.py
 Download the top 100 nuget packages from: https://www.nuget.org/stats/packages
 
 ## show_powershell.py
-Show the powershell scripts from a single nuget package or directory containing only nuget packages
+Show the powershell scripts from a single nuget package or directory containing only nuget packages.
 
-Usage:
-```python2 show_powershell.py Newtonsoft.Json.9.0.1.nupkg```
+Example:
+```python show_powershell.py Newtonsoft.Json.9.0.1.nupkg```
 ```
 START Newtonsoft.Json.9.0.1.nupkg/tools/install.ps1
 param($installPath, $toolsPath, $package, $project)
