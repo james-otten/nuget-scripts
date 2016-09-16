@@ -8,7 +8,7 @@ python add_powershell.py <nuget_package> <script_target> <payload>
 ```
 ```nuget_package```: nuget package
 
-```script_target```: filename of the script to be added/modified (Init.ps1, Install.ps1, Uninstall.ps1)
+```script_target```: filename of the script to be added/modified ([Init.ps1, Install.ps1, Uninstall.ps1](https://docs.nuget.org/create/creating-and-publishing-a-package#automatically-running-powershell-scripts-during-package-installation-and-removal))
 
 ```payload```: payload that will be executed
 
