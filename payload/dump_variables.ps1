@@ -1,0 +1,1 @@
+"installPath = $installPath`ntoolsPath   = $toolsPath`npackage     = $package`nproject     = $project" | Out-File "output.txt"
